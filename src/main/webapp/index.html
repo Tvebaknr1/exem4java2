@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+
+        <div id="div1"  style="color: blue"  onclick="Function1()">
+            hallo
+        </div>
+        <div id="div2" style="color: black" onclick="Function2()">
+            cya
+        </div>
+        <div id="div3" style ="color: red" onclick="Function3()">
+            bye
+        </div>
+        <div id="div4" style="border: aqua;height: 200px;width: 200px" onmouseover="myScript()" onmouseout="myScript1()">
+            words
+        </div>
+        <div id="div5" style="border: bisque;height: 200px;width: 200px" onmouseover="myScriptdiv5()" onmouseout="myScript1div5()">
+            more words
+        </div>
+        <div id="div6" style="border: blueviolet;height: 200px;width: 200px" onmouseover="myScriptdiv6()" onmouseout="myScript1div6()">
+            all the words
+        </div>
+                    
+
+        <table id="table1" style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+            </tr>
+        </table>
+        
+        <form name="Form" id="Formtest">
+            <input type="checkbox" name="checkbox" value="ON" />
+            <input type="text" name="letters"/>
+            <input type="radio" name="Test" value="TestValue" />
+            <input type="button" value="Hallo" id="HalloWorld" />
+        </form>
+        <table id="table">
+            <th>name</th>
+            <th>value</th>
+        </table>
+        
+        <script>function Function1(){
+            console.log("div1 clicked");
+        }
+        function Function2(){
+            console.log("div2 clicked");
+        }
+        function Function3(){
+            console.log("div3 clicked");
+        }
+        function myScript(){
+            //this.innerHTML = "i see you";
+            var x = document.getElementById("div4");
+            x.innerHTML = "i see you";
+        }
+        function myScript1(){
+            var x = document.getElementById("div4");
+            x.innerHTML = "words";
+        }
+        function myScriptdiv5(){
+            var x = document.getElementById("div5");
+            x.innerHTML = "i see you";
+        }
+        function myScript1div5(){
+            var x = document.getElementById("div5");
+            x.innerHTML = "more words";
+        }
+        function myScriptdiv6(){
+            var x = document.getElementById("div6");
+            x.innerHTML = "i see you";
+        }
+        function myScript1div6(){
+            var x = document.getElementById("div6");
+            x.innerHTML = "all the words";
+        }
+       </script>
+       
+       <ul id="ul">
+           <li style="color: red">Arvid Drystan </li>
+           <li style="color: blue">Maitiú Azaria</li>
+           <li style="color: red">Kirils Jarl</li>
+           <li style="color: blue">Olav Zelig</li>
+           <li style="color: red">Nikephoros Fiachra</li>
+           <li style="color: blue">Władysław Karel</li>
+           <li style="color: red">Tine Shalom</li>
+           <li style="color: blue">Suibhne Farrukh</li>
+           <li style="color: red">Dionysius Ambrus</li>
+           <li style="color: blue">Ambrogino Teagan</li>
+       </ul>
+       <script src="script.js"></script>
+       
+    </body>
+</html>
